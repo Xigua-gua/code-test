@@ -1,19 +1,3 @@
-// 2016/09/28
-//
-// ============
-// 作业 6
-//
-// string 题目用到的知识还是
-// 0, 用下标引用字符串
-// 2, 循环
-// 3, 选择 (也就是 if)
-// 1, 字符串切片
-//
-// 注意, 提示在文件最末尾
-// ============
-//
-// 请以之前上课中 string 相关的内容作为参考
-//
 
 
 // 定义我们的 log 函数
@@ -22,14 +6,7 @@ var log = function() {
 }
 
 
-// ======
-// 测试
-// ======
-//
-// 定义我们用于测试的函数
-// ensure 接受两个参数
-// condition 是 bool, 如果为 false, 则输出 message
-// 否则, 不做任何处理
+
 var ensure = function(condition, message) {
     // 在条件不成立的时候, 输出 message
     if(!condition) {
@@ -38,9 +15,7 @@ var ensure = function(condition, message) {
 }
 
 
-// 作业 1
-// 10 分钟做不出就看提示
-//
+
 var find = function(s1, s2) {
     /*
     s1 s2 都是 string
@@ -70,13 +45,7 @@ var test_find = function() {
     ensure(find("145 "," ") === 3, '测试3失败')
     ensure(find("d5wd","5") === 1, '测试4失败')
 }
-test_find()
 
-/*
-下面给出一个例子作为后面作业的参考
-返回字符串的小写形式的函数
-注意, 这里假设了 s 字符串全是大写字母
-*/
 // 这里是两个字符串, 包含了大写字母和小写字母
 var lower = 'abcdefghijklmnopqrstuvwxyz'
 var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -101,14 +70,13 @@ var test_lowercase = function() {
 }
 test_lowercase()
 /*
-作业 2
 
 定义一个函数
 参数是一个字符串 s
 返回大写后的字符串
-注意, 假设 s 字符串全是小写字母
+假设 s 字符串全是小写字母
 
-注意, 自行实现测试函数
+
 */
 var lower = 'abcdefghijklmnopqrstuvwxyz'
 var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -133,7 +101,6 @@ test_uppercase()
 
 
 /*
-作业 3
 
 实现 lowercase1
 它能正确处理带 小写字母 的字符串s
@@ -178,7 +145,7 @@ var test_lowercase1 = function() {
 }
 test_lowercase1()
 /*
-作业 4
+
 
 实现 uppercase1
 它能正确处理带 大写字母 的字符串
@@ -206,7 +173,7 @@ var test_uppercase1 = function() {
 test_uppercase1()
 
 /*
-作业 5
+
 实现一个叫 凯撒加密 的加密算法, 描述如下
 对于一个字符串, 整体移位, 就是加密
 以右移 1 位为例
@@ -214,7 +181,6 @@ test_uppercase1()
 实现 encode1 函数, 把明文加密成密码并返回
 右移 1 位
 
-注意, 假设字符串一定只包含小写字符
 */
 var lower = 'abcdefghijklmnopqrstuvwxyz'
 var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -242,8 +208,8 @@ test_encode1()
 
 
 /*
-作业 6
-实现 decode1 函数, 把作业 5 加密的密码解密为明文并返回
+
+实现 decode1 函数,加密的密码解密为明文并返回
 */
 var decode1 = function(s) {
     var result = ""
@@ -266,7 +232,7 @@ var test_decode1 = function() {
 }
 test_decode1()
 /*
-作业 7
+
 实现 encode2
 多了一个参数 shift 表示移的位数
 */
@@ -293,7 +259,7 @@ var test_encode2 = function() {
 test_encode2()
 
 /*
-作业 8
+
 实现 decode2
 多了一个参数 shift 表示移的位数
 */
@@ -318,7 +284,7 @@ var test_decode2 = function() {
 test_decode2()
 
 /*
-作业 9
+
 实现 encode3
 多了一个参数 shift 表示移的位数
 如果 s 中包含了不是字母的字符, 比如空格或者其他符号, 则对这个字符不做处理保留原样
@@ -362,7 +328,7 @@ test_encode3()
 
 
 /*
-作业 10
+
 实现 decode3
 多了一个参数 shift 表示移的位数
 如果 s 中包含了不是字母的字符, 比如空格或者其他符号, 则对这个字符不做处理保留原样
@@ -403,13 +369,11 @@ var test_decode3 = function() {
 }
 test_decode3()
 /*
-作业 11
 知乎有一个求助题, 破译密码的
 链接在此
 https://www.zhihu.com/question/28324597
 这一看就是凯撒加密...
-如果没思路, 可看本文件最后的提示
-我把密码放在下面, 请解出原文
+
 */
 var lower = 'abcdefghijklmnopqrstuvwxyz'
 var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -440,27 +404,3 @@ var decode4 = function(s) {
 decode4(code)
 
 // =======
-// 提示
-// =======
-/*
-
-1, find
-循环比较, 如果发现就返回
-注意处理不存在的情况
-
-
-2, uppercase
-参考例子实现, 这个简单, 最好 log 一下搞清程序执行的流程和逻辑
-
-
-3, lowercase1
-因为可能字符串中带小写字符, 那么就要判断一下才能处理
-
-
-4, uppercase1
-同作业 3 一样
-
-
-11, decode4
-因为不知道加密的位移, 所以考虑把所有加密的可能都打印出来人肉挑选
-*/

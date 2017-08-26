@@ -1,14 +1,9 @@
-// 16/09/22
-// 作业 4
-//
-// 注意, 自行去定义 log 函数(抄)
-// 注意, 本次作业会慢慢更新
-// 更新 4.8
+
 var log = function() {
     console.log.apply(console, arguments)
 }
 
-// 资料 1
+
 // 求数组的和
 var sum = function(array) {
     // 先设置一个变量用来存 和
@@ -29,7 +24,7 @@ log('sum', sum(a))
 
 
 
-// 作业 1
+
 // 参数是一个只包含数字的 array
 // 求 array 的乘积
 // 函数定义是
@@ -56,7 +51,7 @@ var testProduct = function() {
 
 // testProduct()
 
-// 作业 2
+// test 2
 // 返回一个数的绝对值
 // 函数定义是
 var abs = function(n) {
@@ -75,7 +70,7 @@ var testAbs = function() {
 
 testAbs()
 
-// 作业 3
+// test 3
 // 参数是一个只包含数字的 array
 // 求 array 中所有数字的平均数
 // 函数定义是
@@ -85,7 +80,7 @@ var average = function(array) {
 }
 
 
-// 作业 4
+// test 4
 // 参数是一个只包含数字的 array
 // 求 array 中最小的数字
 // 函数定义是
@@ -102,7 +97,7 @@ var min = function(array) {
     return m
 }
 
-// 作业 5
+
 /*
 参数是一个数字 n
 返回以下序列的结果
@@ -123,7 +118,7 @@ var sum1 = function(n) {
 }
 
 
-// 作业 6
+
 /*
 参数是一个数字 n
 返回以下序列的结果
@@ -146,7 +141,7 @@ var sum2 = function(n) {
 }
 
 
-// 作业 7
+
 /*
 实现 fac 函数
 接受一个参数 n
@@ -163,9 +158,9 @@ var fac = function(n) {
 
 
 /*
-注意 下面几题中的参数 op 是 operator(操作符) 的缩写
 
-作业 8
+
+
 实现 apply 函数
 参数如下
 op 是 string 类型, 值是 '+' '-' '*' '/' 其中之一
@@ -189,7 +184,7 @@ var apply = function(op, a, b) {
 
 
 /*
-作业 9
+
 实现 applyList 函数
 op 是 '+' '-' '*' '/' 其中之一
 oprands 是一个只包含数字的 array
@@ -211,7 +206,7 @@ var applyList = function(op, oprands) {
 
 
 /*
-作业 10
+
 实现 applyCompare 函数
 参数如下
 expression 是一个 array(数组), 包含了 3 个元素
@@ -236,10 +231,7 @@ var applyCompare = function(expression) {
 
 
 /*
-注意
-下面这题做不出来没关系
 
-作业 11
 实现 applyOps 函数
 参数如下
 expression 是一个 array
@@ -255,23 +247,3 @@ var applyOps = function(expression) {
         return applyCompare(expression)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-另外, 下次开始会引入测试这个概念

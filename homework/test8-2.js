@@ -1,4 +1,4 @@
-// 自己定义一个 log 函数
+s// 自己定义一个 log 函数
 var log = function() {
     console.log.apply(console, arguments)
 }

@@ -1,12 +1,3 @@
-// 2016/10/14
-//
-// ============
-// 作业 13
-//
-//
-// 本次作业如果做不出来, 可以大家一起讨论一下
-// ============
-//
 
 
 // 弹窗样式
@@ -121,7 +112,7 @@ var todo4 = function(title) {
     return t
 }
 
-// 作业 1
+// test 1
 //
 var GuaAlert = function(title, message) {
     /*
@@ -189,7 +180,7 @@ var GuaAlert = function(title, message) {
     })
 }
 
-// 作业 2
+// test 2
 //
 var GuaAlert2 = function(title, message, callback2) {
     /*
@@ -238,7 +229,7 @@ var callback2 = function(clickok) {
     }
 }
 
-// 作业 3
+// test 3
 //
 var GuaPrompt = function(title, callback3) {
     /*
@@ -294,7 +285,7 @@ var callback3 = function(clickok, input) {
 }
 
 
-// 作业 4
+// test 4
 //
 var GuaActions = function(title, actions, callback4) {
     /*

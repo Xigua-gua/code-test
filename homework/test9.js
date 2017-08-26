@@ -1,6 +1,6 @@
 // 2016/10/05
 //
-// 作业 9
+// test 9
 // ========
 //
 
@@ -8,7 +8,7 @@ var log = function() {
     console.log.apply(console, arguments)
 }
 
-// 作业 1
+// test 1
 //
 var unique = function(a) {
     /*
@@ -31,7 +31,7 @@ var unique = function(a) {
 // ensureEqual(unique([1, 1, 3, 3, 1, 3]), [1, 3]), 'test 2')
 
 
-// 作业 2
+// test 2
 //
 var intersection = function(a, b) {
     /*
@@ -52,7 +52,7 @@ var intersection = function(a, b) {
 }
 
 
-// 作业 3
+// test 3
 //
 var union = function(a, b) {
     /*/
@@ -73,7 +73,7 @@ var union = function(a, b) {
 }
 
 
-// 作业 4
+// test 4
 //
 var difference = function(a, b) {
     /*/
@@ -94,7 +94,7 @@ var difference = function(a, b) {
 }
 
 
-// 作业 5
+// test 5
 //
 var differenceAll = function(a, b) {
     /*/
@@ -113,7 +113,7 @@ var differenceAll = function(a, b) {
 }
 
 
-// 作业 6
+// test 6
 //
 var isSubset = function(a, b) {
     /*/
@@ -139,16 +139,15 @@ var isSubset2 = function(a, b) {
     return l.length === a.length
 }
 
-// 下面的题目都是 DOM 操作题目
 // =====
 //
-// 作业 7
+// test 7
 //
 /*
 element 是一个标签
 html 是一段 html 字符串
 把 html 作为子元素插入到 element 的末尾
-上课一直在用这个函数
+
 */
 var appendHtml = function(element, html) {
     log('test7 已执行')
@@ -156,7 +155,7 @@ var appendHtml = function(element, html) {
 }
 
 
-// 作业 8
+// test 8
 //
 /*
 element 是一个标签
@@ -173,7 +172,7 @@ var bindEvent = function(element, eventName, callback) {
 }
 
 
-// 作业 9
+// test 9
 //
 /*
 element 是一个标签
@@ -217,7 +216,7 @@ var bindEventDelegate2 = function(element, eventName, callback, responseClass) {
     })
 }
 
-// 作业 10
+// test 10
 //
 /*
 selector 是一个 string, 选择器, 有如下三种取值
@@ -237,7 +236,7 @@ var append = function(selector, html) {
 }
 
 
-// 作业 11
+// test 11
 //
 /*
 selector 是一个 string, 选择器, 有如下三种取值

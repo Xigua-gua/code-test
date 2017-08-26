@@ -1,27 +1,3 @@
-// 2016/09/30
-//
-// ============
-// 作业 7
-//
-// 本次作业主要是 string 和 object 相关
-// 带有一定的 DOM API 练习
-// string 题目用到的知识还是
-// 0, 用下标引用字符串
-// 2, 循环
-// 3, 选择 (也就是 if)
-// 1, 字符串切片
-//
-// 注意, 提示在文件最末尾
-// ============
-//
-// 请以之前上课中 string 相关的内容作为参考
-// 请自行编写测试
-//
-
-/*
-交作业手动传送门
-http://vip.cocode.cc/topics/346
-*/
 
 
 // 定义我们的 log 函数
@@ -32,9 +8,7 @@ var log = function() {
 
 // ======
 // 测试
-// ======
-//
-// 定义我们用于测试的函数
+
 // ensure 接受两个参数
 // condition 是 bool, 如果为 false, 则输出 message
 // 否则, 不做任何处理
@@ -54,9 +28,9 @@ var equal = function(arr1=[], arr2=[]) {
     return equalLength && equalElement
 }
 
-// 作业 1
+
 // 实现函数
-// 10分钟做不出来就看提示
+
 var startsWith = function(s1, s2) {
     /*
     s1 是一个字符串
@@ -86,7 +60,7 @@ startsWith_test()
 // starts_with false
 
 
-// 作业 2
+
 // 实现函数
 // 10 分钟做不出就看提示
 var findIn = function(s1, s2) {
@@ -116,9 +90,9 @@ var findIn_test = function() {
     ensure(findIn('smart' , ' ') === -1,'测试4失败')
 }
 findIn_test()
-// 作业 3
-// 实现函数
-// 10 分钟做不出就看提示
+
+
+
 var findAllIn = function(s1, s2) {
     /*
     s1 是一个字符串
@@ -154,9 +128,7 @@ var findAllIn_test = function() {
 // find all []
 
 
-// 作业 4
-// 实现函数
-// 10 分钟做不出就看提示
+
 var startsWith = function(s1, s2) {
     /*
     s1 是一个字符串
@@ -204,9 +176,8 @@ var findAllString = function(s1, s2) {
 // find all []
 
 
-// 作业 5
-// 实现函数
-// 10分钟做不出来就看提示
+
+
 //
 // var endsWith = function(s1, s2) {
 //     /*
@@ -246,7 +217,7 @@ var endsWith_test = function(){
 }
 startsWith_test()
 
-// 作业 6
+
 // 实现函数
 var topl = function(students) {
     /*
@@ -300,9 +271,7 @@ var student_list = [
 ]
 
 
-// 作业 7
-// 做不出尽早看提示或者到群里讨论或者发帖
-//
+
 /*
 day 是代表星期的数字, 从周一到周日分别是 1 2 3 4 5 6 7
 返回 '星期一' '星期二' 这样的描述字符串
@@ -323,7 +292,7 @@ var formated_weekday = function(day) {
 
 
 
-// 作业 8
+// test 8
 
 var discount = function(price, grade) {
     /*
@@ -369,8 +338,7 @@ var discount_test = function() {
     ensure(discount(500,'不知道') === 500, '测试5失败')
 }
 discount_test()
-// 作业 9
-// 做不出尽早看提示或者到群里讨论或者发帖
+
 /*
 array 是 array 类型, 里面的元素都是字符串
 按如下的格式返回这个 array
@@ -462,43 +430,4 @@ var prettyLog2 = function(array) {
 var array = ['python', 'js', 'objective-c']
 prettyLog1(array)
 // =======
-// 提示
-// =======
-/*
-注意要多 log 数据, 模拟执行流程, 发现问题所在
-
-1, startsWith
-简单的办法是 slice s1 后与 s2 比较
-
-
-2, findIn
-初始化下标为 -1
-用 while 循环去遍历 s1 来比较
-如果找到则设置下标并 break 循环
-
-
-3, findAllIn
-和 findIn 类似
-只不过是用一个 array 去保存下标
-
-
-4, findAllString
-循环遍历 s1
-每次循环 slice 一个字符串出来用 startsWith 检查
-
-
-5, endsWith
-切片 s1 然后和 s2 比较
-切片下标可以用长度算出
-
-
-6, top
-参考前几次作业的 min max 函数
-
-
-7, formated_weekday
-无
-
-
-8, discount
-无
+/

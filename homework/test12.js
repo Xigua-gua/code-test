@@ -1,15 +1,4 @@
-// 2016/10/12
-//
-// ============
-// 作业 12
-//
-//
-// 注意, 提示在文件最末尾
-// ============
-//
 
-
-// 定义我们的 log 函数
 var log = function() {
     console.log.apply(console, arguments)
 }
@@ -22,14 +11,7 @@ var arrayEquals = function(a, b, message) {
         log(`${message}测试成功---> ${a}等于${b}`)
     }
 }
-// ======
-// 测试
-// ======
-//
-// 定义我们用于测试的函数
-// ensure 接受两个参数
-// condition 是 bool, 如果为 false, 则输出 message
-// 否则, 不做任何处理
+
 var ensure = function(condition, message) {
     // 在条件不成立的时候, 输出 message
     if(!condition) {
@@ -38,22 +20,17 @@ var ensure = function(condition, message) {
 }
 
 
-// 作业 1
+// test 1
 //
 var ascii = function(char) {
     /*
     char 是一个长度为 1 的 string
     这个函数返回这个字符的 ASCII 码
 
-    这个答案用到了 s.charCodeAt(index) 函数, 例子如下
-    'A'.charCodeAt(0) 返回 65
-    'a'.charCodeAt(0) 返回 97
-
     字符在电脑中的存储是以数字的方式
     每个字符其实是用一个数字代表的, 这个方式叫做编码
     ASCII 码是一个通用的编码, 包含英文字符数字和常见符号
 
-    这个作业答案我给了, 理解一下这件事就好, 不懂搜一下
     */
     return char.charCodeAt(0)
 }
@@ -62,16 +39,13 @@ var test1 = function() {
     arrayEquals(ascii('M'), 77,'test1')
 }
 
-// 作业 2
+// test 2
 //
 var charFromAscii = function(code) {
     /*
     code 是一个 int
     返回 code 所表示的字符
 
-    这个答案用到了 String.fromCharCode(code) 函数, 例子如下
-    String.fromCharCode(97) 返回 'a'
-    String.fromCharCode(65) 返回 'A'
     */
     return String.fromCharCode(code)
 }
@@ -81,7 +55,7 @@ var test2 = function() {
 }
 
 
-// 作业 3
+// test 3
 //
 /*
 n 是一个不大于 255 的 int
@@ -108,7 +82,7 @@ var test3 = function() {
 
 
 
-// 作业 4
+// test 4
 //
 /*
 bin 是一个 8 位二进制形式的字符串
@@ -132,7 +106,7 @@ var test4 = function() {
 }
 
 
-// 作业 5
+// test 5
 //
 /*
 s 是一个 string
@@ -157,7 +131,7 @@ var test5 = function() {
     arrayEquals(binaryStream('Man'), '010011010110000101101110','test5')
 }
 
-// 作业 6
+// test 6
 //
 var stringFromBinary = function(bins) {
     /*
@@ -190,7 +164,7 @@ var test6 = function() {
     arrayEquals(stringFromBinary('010011010110000101101110'), 'Man','test6')
 }
 
-// 作业 7
+// test 7
 //
 /*
 s 是一个 string
@@ -226,8 +200,7 @@ ASCII         77       0         0
 
 
 既然 3 个字节转换为 4 个 base64 单元
-那么 1 个字节怎么办呢?
-答案是用 0 补出 3 字节, 如下所示
+
 原始信息    M
 ASCII     77       0        0
 二进制     01001101 00000000 00000000
@@ -276,7 +249,7 @@ var test7 = function() {
     arrayEquals(base64Encode('M'), 'TQ==', 'test7')
 }
 
-// 作业 8
+// test 8
 //
 
 /*

@@ -1,12 +1,4 @@
-// 2016/10/19
-//
-// ============
-// 作业 15
-//
-//
-// 本次作业没有提示的地方需要自行搜索
-// 别忘了用 github 管理作业的进度
-// ============
+======
 //
 var log = function() {
     console.log.apply(console, arguments);
@@ -15,7 +7,7 @@ var log = function() {
 
 
 var options = ['China', 'Japan', 'England','ewqe','123']
-// 作业 1
+// test 1
 //
 // 实现函数 GuaOptions1, 功能见注释描述
 var GuaOptions1 = function(options) {
@@ -31,7 +23,7 @@ var GuaOptions1 = function(options) {
 
     */
     var t = ''
-    $.map(options, function(value){
+    $.map(options, function(value){s
         t += `<label class="pure-checkbox">
                <input  type='checkbox' value=${value}>${value}
               </label></br>`
@@ -40,7 +32,7 @@ var GuaOptions1 = function(options) {
 }
 
 // GuaOptions1(options)
-// 作业 2
+// test 2
 //
 var GuaOptions2 = function(options) {
     /*
@@ -76,7 +68,7 @@ var GuaOptions2 = function(options) {
 }
 // GuaOptions2(options)
 
-// 作业 3
+// test 3
 //
 
 var options1 ={
@@ -106,7 +98,7 @@ var GuaOptions3 = function(options1) {
 }
 // GuaOptions3(options1)
 
-// 作业 4
+// test 4
 //
 var GuaOptions4 = function(options1) {
     /*
@@ -182,27 +174,3 @@ GuaOptions4(options1)
 //         })
 //     })
 // }
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/

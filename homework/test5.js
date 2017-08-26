@@ -1,32 +1,12 @@
-  // 2016/09/25
-//
-// ============
-// 作业 5
-// string 的花式操作函数
-//
-// 用到的知识主要是
-// 0, 用下标引用字符串
-// 1, 字符串切片
-// 2, 循环
-// 3, 选择 (也就是 if)
-//
-// 注意, 提示在文件最末尾
-// ============
-//
-// 请以之前上课中 string 相关的内容作为参考
-//
-// 请直接在我的代码中更改/添加, 不要新建别的文件
 
 
-// 定义我们的 log 函数
 var log = function() {
     console.log.apply(console, arguments)
 }
 
 
 // ======
-// 测试
-// 本次作业起, 我们开始使用自动测试的方法来验证结果
+
 // ======
 //
 // 定义我们用于测试的函数
@@ -40,9 +20,7 @@ var ensure = function(condition, message) {
     }
 }
 
-// 例子
-// 测试的使用
-//
+
 // 注意看, 我们使用了上文定义的 ensure 来进行测试
 var test_sample = function() {
     // ensure 函数接受两个参数
@@ -58,18 +36,7 @@ test_sample()
 // *** 测试失败: 测试 1 > 2 失败
 
 
-// ======
-// 资料
-// ======
-//
-// String 函数可以把数字转成字符串
-// 例如 String(1) 就能得到 '1'
-// 注意, String 是大写开头的函数, 不要弄错大小写
-//
 
-
-// 作业 1
-// 10 分钟做不出就看提示
 //
 var nChar = function(char, n) {
     var s = ''
@@ -107,10 +74,9 @@ var test_zfill = function() {
 test_zfill()
 
 
-// 作业 2
-// 10 分钟做不出就看提示
+
 //
-// 注意, 这是一个新的知识点, 叫 默认参数
+
 // fillchar 这个参数如果你不提供, 它的值默认就是 ' '
 // 语法就是这样
 var ljust = function(s, width, fillchar=' ') {
@@ -136,8 +102,7 @@ var test_ljust = function() {
     ensure(ljust('gua', 5, '*') === 'gua**', 'ljust 测试 3')
 }
 
-// 作业 3
-// 10 分钟做不出就看提示
+
 //
 var rjust = function(s, width, fillchar=' ') {
     /*
@@ -160,8 +125,7 @@ var test_rjust = function() {
     ensure(rjust('gua', 5, '*') === '**gua', 'rjust 测试 3')
 }
 
-// 作业 4
-// 10 分钟做不出就看提示
+
 //
 var center = function(s, width, fillchar=' ') {
     /*
@@ -191,9 +155,7 @@ var test_center = function() {
     ensure(center('gua', 6) === ' gua  ', 'center 测试 4')
 }
 
-// 作业 5
-// 10 分钟做不出就看提示
-// 注意, 看上面的资料, 介绍了一个 includes 函数
+
 //
 var is_space = function(s) {
     /*
@@ -223,8 +185,7 @@ var test_is_space = function() {
 
 test_is_space()
 
-// 作业 6
-// 10 分钟做不出就看提示
+
 //
 var log = function() {
     console.log.apply(console, arguments)
@@ -264,9 +225,6 @@ var test_is_digit = function() {
 
 test_is_digit()
 
-// 作业 7
-// 10 分钟做不出就看提示
-//
 
 var strip_left = function(s) {
     /*
@@ -298,8 +256,8 @@ var test_strip_left = function() {
 
 test_strip_left()
 
-// 作业 8
-// 10 分钟做不出就看提示
+
+
 //
 
 var strip_right = function(s) {
@@ -331,8 +289,7 @@ var test_strip_right = function() {
 
 test_strip_right()
 
-// 作业 9
-// 10 分钟做不出就看提示
+
 //
 var strip_right = function(s) {
     /*
@@ -391,8 +348,6 @@ var test_strip = function() {
 
 test_strip()
 
-// 作业 10
-// 10 分钟做不出就看提示
 //
 var replace = function(s, old, newstr) {
     /*
@@ -428,30 +383,5 @@ var test_replace = function() {
 
 test_replace()
 
-/*
---------
-提示
---------
 
-zfill
-1, 先把 n 转成 string 类型, 这样就可以求出长度
-2, 有长度就可以和 width 参数比较, 看看需要补几个 0
-3, 然后就可以得到一个包含几个 0 的字符串
-4, 拼接两个字符串, 就得到了结果, 返回, 成功
-
-
-ljust
-1, 用 s 的长度和 width 算出需要填充的 fillchar 个数
-2, 得到要填充的字符串
-3, 拼接, 返回, 成功
-
-
-rjust
-同上
-
-
-center
-1, 算出两边要填充的个数
-2, 得到两边的字符串
-3, 拼接, 返回
-*/
+-

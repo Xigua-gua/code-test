@@ -1,13 +1,3 @@
-// 2016/10/07
-//
-// ============
-// 作业 10
-//
-//
-// 注意, 提示在文件最末尾
-// ============
-//
-
 
 // 定义我们的 log 函数
 var log = function() {
@@ -26,7 +16,7 @@ var arrayEquals = function(a, b, message) {
 // 测试
 // ======
 //
-// 定义我们用于测试的函数
+
 // ensure 接受两个参数
 // condition 是 bool, 如果为 false, 则输出 message
 // 否则, 不做任何处理
@@ -38,7 +28,7 @@ var ensure = function(condition, message) {
 }
 
 
-// 作业 1
+// test 1
 //
 var isPrime = function(n) {
     /*
@@ -64,7 +54,7 @@ var test1 = function() {
     arrayEquals(!isPrime(1), true, '1-3')
     arrayEquals(isPrime(2), true, '1-4')
 }
-// 作业 2
+// test 2
 //
 var primeNumbers = function() {
     /*
@@ -85,7 +75,7 @@ var test2 = function() {
         41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97], "2-1" )
 }
 
-// 作业 3
+// test 3
 //先写一个辅助函数 让由空格隔开的每个单词都是首字母大写
 var capst = function(str) {
     var lower = 'abcdefghijklmnopqrstuvwxyz'
@@ -142,7 +132,7 @@ var test3 = function() {
     arrayEquals(capString('i aM lOoKiNg fOR YoU'), 'I Am Looking For You', '3-2')
 }
 
-// 作业 4
+// test 4
 //
 /*
 给定一个只包含字母的字符串，返回单个字母出现的次数
@@ -190,7 +180,7 @@ var test4 = function() {
 }
 
 
-// 作业 5
+// test 5
 //
 var join = function(delimiter, array) {
 
@@ -248,7 +238,7 @@ var test5 = function() {
     "foo=1&bar=far&me=cool",'5-1')
 }
 
-// 作业 6
+// test 6
 //
 var split = function(s, delimiter=' ') {
     var l = []
@@ -300,7 +290,7 @@ var test6 = function() {
     arrayEquals(argsFromQuery('foo=1&bar=far'),{foo: "1", bar: "far"},'6-1')
 }
 
-// 作业 7
+// test 7
 //
 var ajaxGet = function(url, callback) {
     /*
@@ -320,7 +310,7 @@ var ajaxGet = function(url, callback) {
 }
 
 
-// 作业 8
+// test 8
 //
 var ajax = function(request) {
     /*
