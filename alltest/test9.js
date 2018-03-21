@@ -26,7 +26,7 @@ var unique = function(a) {
     return array
 }
 
-// 注意, 要自行实现 arrayEquals 来判断两个数组是否相等
+// 要自行实现 arrayEquals 来判断两个数组是否相等
 // ensureEqual(unique([1, 2, 3, 1, 3, 5]), [1, 2, 3, 5]), 'test 1')
 // ensureEqual(unique([1, 1, 3, 3, 1, 3]), [1, 3]), 'test 2')
 
@@ -251,7 +251,6 @@ responseClass 是一个字符串, 这个参数可以为空
 当 responseClass 给出的时候, callback 只会响应拥有 responseClass 类的元素
 当 responseClass 没有给的时候, callback 直接响应
 
-这题做不出来就放弃
 */
 var bindAll = function(selector, eventName, callback, responseClass) {
     log('test-11 responseClass--->',responseClass)
@@ -266,56 +265,5 @@ var bindAll = function(selector, eventName, callback, responseClass) {
 
 
 // =====
-// 提示
-// =====
-/*/
 
-1, unique
-创建一个新数组
-遍历 a
-对于 a 中的每个元素, 判断是否在新数组中出现
-如果没出现就 push
-
-
-2, intersection
-创建一个新数组
-遍历 a
-对于 a 中的每个元素, 判断是否在 b 中出现
-如果出现就 push 到新数组
-
-
-3, union
-有问题单独提问
-
-
-4, difference
-有问题单独提问
-
-
-5, differenceAll
-对 a b 分别 difference 并 push 到新数组
-
-
-6, isSubset
-循环判断
-
-
-7, appendHtml
-上课用的函数的封装
-
-
-8, bindEvent
-上课用函数的简单封装
-
-
-9, bindEventDelegate
-事件委托的简单封装
-
-
-10, append
-选择, 然后循环 appendHtml
-
-
-11, bindAll
-这题做不出来就算了
 /*/
